@@ -1,35 +1,11 @@
-def my_hash
-your_hash = {"name" => "Amyre"}
-end
+def key_for_min_value(hash)
+  lowest_key = hash.reduce { |key, value|key.last > value.last ? value : key}
 
 
-def shipping_manifest
-  shipping_manifest = {
-    "whale bone corsets" => 5,
-    "porcelain vases" => 2,
-   "oil paintings" => 3
-  }
-end
-
-def retrieval
-  shipping_manifest = {
-                  "whale bone corsets" => 5,
-                  "porcelain vases" => 2,
-                  "oil paintings" => 3
-                 }
-end
-
-def adding
-  shipping_manifest = {
-                  "whale bone corsets" => 5,
-                  "porcelain vases" => 2,
-                  "oil paintings" => 3
-                 }
-                 shipping_manifest
-                 shipping_manifest['muskets']=2
-                 shipping_manifest['gun powder']=4
-
-                 shipping_manifest
-
-
+def key_for_min_value(name_hash)	    
+  if hash == {}
+      lowest_key
+    else
+      lowest_key.first
+    end
 end
